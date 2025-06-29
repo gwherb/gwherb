@@ -3,6 +3,7 @@
 ![Username Animation](./username-animation.svg)
 
 </div>
+
 **Graduate Student** at The Ohio State University  
 🎓 B.S. Biomedical Engineering (2024) | M.S. Computer Science & Engineering (2026)
 
