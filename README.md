@@ -14,7 +14,7 @@ Mechanistic Interpretability of LLMs • Computer Vision for Military Applicatio
 
 **🤖 LLMagikarp** - Pokemon battle AI using LLMs for strategic decision-making and move analysis
 
-**🎮 Project Hircine** - Computer vision system for drones with real-time object detection and depth estimation  
+**🦅 Project Hircine** - Computer vision system for drones with real-time object detection and depth estimation  
 
 **🎬 Story-to-Video Pipeline** - Automated content creation from AI-generated stories to finished videos
 
