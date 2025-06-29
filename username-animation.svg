@@ -1,0 +1,86 @@
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ba0c2f;stop-opacity:1">
+        <animate attributeName="stop-color" 
+                 values="#ba0c2f;#a7b1b7;#ba0c2f;#a7b1b7;#ba0c2f" 
+                 dur="3s" 
+                 repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#a7b1b7;stop-opacity:1">
+        <animate attributeName="stop-color" 
+                 values="#a7b1b7;#ba0c2f;#a7b1b7;#ba0c2f;#a7b1b7" 
+                 dur="3s" 
+                 repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#ba0c2f;stop-opacity:1">
+        <animate attributeName="stop-color" 
+                 values="#ba0c2f;#a7b1b7;#ba0c2f;#a7b1b7;#ba0c2f" 
+                 dur="3s" 
+                 repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="60" fill="#0d1117" rx="8"/>
+  
+  <!-- Username text -->
+  <text x="100" y="35" 
+        font-family="'Monaco', 'Menlo', 'Ubuntu Mono', monospace" 
+        font-size="18" 
+        font-weight="bold"
+        text-anchor="middle" 
+        fill="url(#gradient)"
+        filter="url(#glow)">
+    gwherb
+    
+    <!-- Typing cursor -->
+    <tspan opacity="1" fill="#ba0c2f">
+      |
+      <animate attributeName="opacity" 
+               values="1;0;1" 
+               dur="1s" 
+               repeatCount="indefinite"/>
+    </tspan>
+  </text>
+  
+  <!-- Floating particles -->
+  <circle r="1.5" fill="#ba0c2f" opacity="0.6">
+    <animateMotion dur="4s" repeatCount="indefinite">
+      <path d="M20,20 Q50,10 80,20 T140,20 Q170,10 180,20"/>
+    </animateMotion>
+    <animate attributeName="opacity" 
+             values="0.6;1;0.6" 
+             dur="2s" 
+             repeatCount="indefinite"/>
+  </circle>
+  
+  <circle r="1" fill="#a7b1b7" opacity="0.4">
+    <animateMotion dur="6s" repeatCount="indefinite">
+      <path d="M180,40 Q150,50 120,40 T60,40 Q30,50 20,40"/>
+    </animateMotion>
+    <animate attributeName="opacity" 
+             values="0.4;0.8;0.4" 
+             dur="3s" 
+             repeatCount="indefinite"/>
+  </circle>
+  
+  <circle r="1.2" fill="#ba0c2f" opacity="0.5">
+    <animateMotion dur="5s" repeatCount="indefinite">
+      <path d="M40,15 Q100,5 160,15 Q180,25 170,35 Q100,45 30,35 Q10,25 40,15"/>
+    </animateMotion>
+    <animate attributeName="opacity" 
+             values="0.5;0.9;0.5" 
+             dur="2.5s" 
+             repeatCount="indefinite"/>
+  </circle>
+</svg>
